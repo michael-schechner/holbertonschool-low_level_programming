@@ -11,14 +11,13 @@ int main(void)
 
 	while (n <= 'z')
 	{
+		putchar(n);
 		if (n == 'd' || n == 'p')
 		{
-			putchar(n);
 			n = n+2;
 		}
 		else
 		{
-			putchar(n);
 			n++;
 		}
 	}
