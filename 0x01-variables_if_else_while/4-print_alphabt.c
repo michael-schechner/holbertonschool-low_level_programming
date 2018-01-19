@@ -14,7 +14,7 @@ int main(void)
 		putchar(n);
 		if (n == 'd' || n == 'p')
 		{
-			n = n+2;
+			n = n + 2;
 		}
 		else
 		{
