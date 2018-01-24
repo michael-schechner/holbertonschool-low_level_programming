@@ -1,0 +1,31 @@
+#include "holberton.h"
+
+void times_table(void)
+{
+  int x;
+  int y;
+  int ans;
+
+  for(x = 0; x <= 9; x++)
+    {
+      for(y = 0; y <=9; y++)
+	{
+	  ans = x*y;
+	  if(ans < 10)
+	    {
+	    _putchar(ans + '0');
+	    _putchar(',');
+	    _putchar(' ');
+	    _putchar(' ');
+	    }
+	  else
+	    {
+	    _putchar(ans/10 + '0');
+	    _putchar(ans%10 + '0');
+	    _putchar(',');
+	    _putchar(' ');
+	    }
+	}
+      _putchar('\n');
+    }
+}
