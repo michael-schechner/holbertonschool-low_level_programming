@@ -32,7 +32,7 @@ void print_triangle(int size)
 	{
 		printblock(height - 1, ' ');
 		printblock(p, '#');
-		_putchar('\n');
+		printblock(1, '\n');
 		height--;
 		p++;
 	}
