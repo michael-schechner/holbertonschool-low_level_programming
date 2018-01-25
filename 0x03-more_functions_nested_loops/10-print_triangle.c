@@ -27,7 +27,9 @@ void print_triangle(int size)
 {
 	int p = 1;
 	int height = size;
-
+	
+	if (size <= 0)
+		printblock(1, '\n');
 	while (height > 0)
 	{
 		printblock(height - 1, ' ');
