@@ -1,5 +1,11 @@
 #include "holberton.h"
 
+/**
+ * _puts - prints string
+ * @str: pointer to char
+ * Return: void
+ */
+
 void _puts(char *str)
 {
 	int i;

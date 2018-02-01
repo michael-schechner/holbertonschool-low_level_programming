@@ -1,5 +1,11 @@
 #include "holberton.h"
 
+/**
+ * _strlen - counts length of string
+ * @s: pointer to int
+ * Return: void
+ */
+
 int _strlen(char *s)
 {
 	int i;
