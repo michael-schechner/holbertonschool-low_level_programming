@@ -1,4 +1,3 @@
-/* holberton header file */
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
@@ -23,4 +22,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-#endif /* !HOLBERTON_H */
+#endif /* HOLBERTON_H */
