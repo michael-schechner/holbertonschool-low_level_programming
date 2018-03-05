@@ -1,0 +1,55 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * _strlenc - gets str length of const
+ * @s: const pointer to string
+ * return: returns length of s
+ */
+
+int _strlenc(const char *s)
+{
+	int i;
+
+	for(i = 0; s[i] != '\0'; i++)
+		;
+	return (i);
+}
+
+/**
+ *add_node_end - adds node to end
+ * @head: pointer to pointer containing nodes
+ * @str: pointer to string
+ * Return: returns node otherwise NULL
+ */
+
+list_t *add_node_end(list_t **head, const char *str)
+{
+	list_t *node;
+	list_t *last;
+
+	node = malloc(sizeof(list_t));
+	if (node == NULL || str == NULL)
+	{
+		return(NULL);
+	}
+	node->str = strdup(str);
+	node->len = _strlenc(str);
+	node->next = NULL;
+	last = *head;
+	if(*head == NULL)
+	{
+		*head = node;
+	}
+	else
+	{
+		while (last->next != NULL)
+		{
+			last = last->next;
+		}
+		last->next = node;
+	}
+	return (node);
+}
